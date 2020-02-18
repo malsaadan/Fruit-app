@@ -1,0 +1,12 @@
+Before Starting An App / App Structrue:
+
+1. Components
+    - ~ App (Container)
+        - Search
+        - X List (Container)
+            - X Item(s) 
+
+2. Props
+    - Fruits [Array]
+
+3. State
