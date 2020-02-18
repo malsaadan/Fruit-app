@@ -2,7 +2,7 @@ Before Starting An App / App Structrue:
 
 1. Components
     - ~ App (Container)
-        - Search
+        - ~ Search
         - X List (Container)
             - X Item(s) 
 
@@ -10,3 +10,38 @@ Before Starting An App / App Structrue:
     - Fruits [Array]
 
 3. State
+
+
+
+
+Family:
+
+    Child#1
+            \
+       X     Parent#1
+            /        \
+    Child#2           \
+       X        X      Grand Parent     
+    Child#3           /
+            \        /
+       X     Parent#2
+            /
+    Child#4
+
+
+
+
+Fruit Family:
+
+    Item#1
+            \
+       X     List Container(Props) => It lists the fruits only
+            /       \
+                     \
+    Item#2            \
+       X        X      App (Fruits Array, Search Query) ==> Take data from search box, go over fruits array => INDEX
+    Input#3           /
+            \        /
+       X     Search / => Get search query from user
+            /
+    Input#4

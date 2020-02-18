@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// We moved the data from ListContainer to index => so it can be distributed to its children
+const fruits = ['Mango', 'Banana', 'Orange', 
+                'Apple', 'Pineapple', 'Dates'];
+
+// Pass fruits as props to the App
+ReactDOM.render(<App fruits={fruits}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
